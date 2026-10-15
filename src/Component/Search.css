@@ -1,0 +1,375 @@
+/* ================= SEARCH PAGE ================= */
+
+.velmora-search-page {
+  min-height: 100vh;
+  padding-bottom: 70px;
+  background: #f8f6f1;
+  color: #172b42;
+}
+
+/* ================= SEARCH BANNER ================= */
+
+.search-page-banner {
+  min-height: 280px;
+  padding: 55px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #172b42;
+  color: #ffffff;
+}
+
+.search-page-banner > p {
+  margin-bottom: 18px;
+  color: #d0b48b;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+
+.search-page-banner h1 {
+  margin: 0 0 15px;
+  font-family: Georgia, serif;
+  font-size: 46px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.search-page-banner > span {
+  color: #e4e0d8;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* ================= RESULTS CONTAINER ================= */
+
+.search-results-container {
+  padding-top: 55px;
+}
+
+/* ================= RESULTS HEADING ================= */
+
+.search-results-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 35px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #e3dbcf;
+}
+
+.search-eyebrow {
+  margin-bottom: 10px;
+  color: #a78354;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+}
+
+.search-results-heading h2 {
+  margin: 0 0 10px;
+  font-family: Georgia, serif;
+  font-size: 31px;
+  font-weight: 400;
+  color: #172b42;
+}
+
+.search-query {
+  margin: 0;
+  color: #777777;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.search-result-count {
+  flex-shrink: 0;
+  padding-bottom: 3px;
+  color: #777777;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+}
+
+/* ================= PRODUCT CARD ================= */
+
+.search-product-card {
+  height: 100%;
+  background: #ffffff;
+  border: 1px solid #eee7dc;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(23, 43, 66, 0.09);
+}
+
+/* ================= PRODUCT IMAGE ================= */
+
+.search-product-image {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 290px;
+  padding: 18px;
+  overflow: hidden;
+  background: #f1eee7;
+  text-decoration: none;
+}
+
+.search-product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.45s ease;
+}
+
+.search-product-card:hover .search-product-image img {
+  transform: scale(1.06);
+}
+
+.search-view-label {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 13px 8px;
+  background: rgba(23, 43, 66, 0.93);
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 0.3s ease;
+}
+
+.search-product-card:hover .search-view-label {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ================= PRODUCT INFORMATION ================= */
+
+.search-product-info {
+  padding: 20px 17px;
+  text-align: center;
+}
+
+.search-product-category {
+  margin-bottom: 8px;
+  color: #a78354;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.search-product-info h3 {
+  margin: 0 0 10px;
+  font-family: Georgia, serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.search-product-info h3 a {
+  color: #172b42;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.search-product-info h3 a:hover {
+  color: #a78354;
+}
+
+.search-product-price {
+  margin: 0 0 18px;
+  color: #172b42;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* ================= VIEW PRODUCT BUTTON ================= */
+
+.search-product-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  width: 100%;
+  padding: 13px 8px;
+  border: 1px solid #172b42;
+  background: #ffffff;
+  color: #172b42;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.search-product-button:hover {
+  border-color: #172b42;
+  background: #172b42;
+  color: #ffffff;
+}
+
+/* ================= NO RESULTS ================= */
+
+.search-no-results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 350px;
+  padding: 45px 20px;
+  background: #ffffff;
+  border: 1px solid #e7dfd3;
+  text-align: center;
+}
+
+.no-results-icon {
+  margin-bottom: 22px;
+  color: #a78354;
+  font-size: 35px;
+}
+
+.search-no-results h3 {
+  margin-bottom: 12px;
+  font-family: Georgia, serif;
+  font-size: 29px;
+  font-weight: 400;
+  color: #172b42;
+}
+
+.search-no-results p {
+  max-width: 480px;
+  margin-bottom: 25px;
+  color: #777777;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* ================= EXPLORE BUTTON ================= */
+
+.search-explore-button {
+  display: inline-block;
+  padding: 15px 25px;
+  border: 1px solid #172b42;
+  background: #172b42;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.search-explore-button:hover {
+  border-color: #a78354;
+  background: #a78354;
+  color: #ffffff;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 991px) {
+  .search-product-image {
+    height: 250px;
+  }
+
+  .search-results-container {
+    padding-top: 40px;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 576px) {
+  .velmora-search-page {
+    padding-bottom: 40px;
+  }
+
+  .search-page-banner {
+    min-height: 230px;
+    padding: 40px 18px;
+  }
+
+  .search-page-banner > p {
+    font-size: 9px;
+    letter-spacing: 3px;
+  }
+
+  .search-page-banner h1 {
+    font-size: 32px;
+  }
+
+  .search-page-banner > span {
+    font-size: 12px;
+  }
+
+  .search-results-container {
+    padding-top: 30px;
+  }
+
+  .search-results-heading {
+    align-items: flex-start;
+    margin-bottom: 25px;
+    padding-bottom: 18px;
+  }
+
+  .search-results-heading h2 {
+    font-size: 25px;
+  }
+
+  .search-query {
+    font-size: 11px;
+  }
+
+  .search-result-count {
+    font-size: 9px;
+    letter-spacing: 0.5px;
+  }
+
+  .search-product-image {
+    height: 190px;
+    padding: 10px;
+  }
+
+  .search-product-info {
+    padding: 15px 10px;
+  }
+
+  .search-product-info h3 {
+    font-size: 16px;
+  }
+
+  .search-product-price {
+    font-size: 13px;
+  }
+
+  .search-product-button {
+    gap: 5px;
+    padding: 11px 5px;
+    font-size: 9px;
+    letter-spacing: 0.5px;
+  }
+
+  .search-view-label {
+    display: none;
+  }
+
+  .search-no-results {
+    min-height: 300px;
+    padding: 30px 18px;
+  }
+
+  .search-no-results h3 {
+    font-size: 24px;
+  }
+}

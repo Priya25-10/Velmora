@@ -1,0 +1,633 @@
+/* =====================================================
+   VELMORA MEN PAGE
+===================================================== */
+
+.men-page {
+  background: #ffffff;
+  color: #142b46;
+  min-height: 100vh;
+}
+
+
+/* =====================================================
+   BANNER
+===================================================== */
+
+.men-banner {
+  height: 420px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  position: relative;
+}
+
+/* soft overlay */
+.men-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.men-banner-content {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+.men-banner-content p {
+  font-size: 12px;
+  letter-spacing: 5px;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+
+.men-banner-content h1 {
+  font-size: 52px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  margin: 0 0 14px;
+}
+
+.men-banner-content span {
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+
+/* =====================================================
+   PRODUCTS SECTION
+===================================================== */
+
+.men-products {
+  padding: 65px 0 80px;
+}
+
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.men-heading {
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+.men-heading p {
+  color: #a67c52;
+  font-size: 11px;
+  letter-spacing: 3px;
+  margin-bottom: 9px;
+  text-transform: uppercase;
+}
+
+.men-heading h2 {
+  color: #142b46;
+  font-size: 38px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.men-heading span {
+  color: #777;
+  font-size: 14px;
+}
+
+
+/* =====================================================
+   TOOLBAR
+===================================================== */
+
+.products-toolbar {
+  min-height: 68px;
+
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 42px;
+}
+
+
+/* FILTER */
+
+.filter-btn {
+  background: transparent;
+  border: none;
+
+  color: #142b46;
+
+  font-size: 12px;
+  letter-spacing: 1.2px;
+
+  cursor: pointer;
+
+  padding: 10px 5px;
+
+  transition: 0.3s;
+}
+
+.filter-btn:hover {
+  color: #a67c52;
+}
+
+
+/* SORT */
+
+.sort-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sort-box label {
+  color: #999;
+
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.sort-box select {
+  border: none;
+  outline: none;
+
+  color: #142b46;
+
+  background: transparent;
+
+  font-size: 12px;
+
+  cursor: pointer;
+}
+
+
+/* =====================================================
+   FILTER AREA
+===================================================== */
+
+.filter-area {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+  flex-wrap: wrap;
+
+  padding: 18px 20px;
+
+  background: #f7f5f1;
+
+  margin-bottom: 35px;
+
+  border: 1px solid #eee;
+}
+
+.filter-area button {
+  background: white;
+
+  border: 1px solid #d5d5d5;
+
+  color: #333;
+
+  padding: 9px 17px;
+
+  font-size: 11px;
+  letter-spacing: 1px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.filter-area button:hover,
+.filter-area .active-filter {
+  background: #142b46;
+  color: white;
+  border-color: #142b46;
+}
+
+
+/* =====================================================
+   PRODUCT CARD
+===================================================== */
+
+.men-product-card {
+  height: 100%;
+
+  background: #ffffff;
+
+  border: 1px solid #eeeeee;
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+
+  overflow: hidden;
+}
+
+.men-product-card:hover {
+  transform: translateY(-6px);
+
+  border-color: #e2e2e2;
+
+  box-shadow: 0 14px 35px rgba(20, 43, 70, 0.10);
+}
+
+
+/* =====================================================
+   PRODUCT IMAGE
+===================================================== */
+
+.men-product-image {
+  height: 330px;
+
+  background: #f7f6f3;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.men-product-image img {
+  width: 88%;
+  height: 90%;
+
+  object-fit: contain;
+
+  transition: transform 0.45s ease;
+}
+
+.men-product-card:hover .men-product-image img {
+  transform: scale(1.06);
+}
+
+
+/* =====================================================
+   DISCOUNT
+===================================================== */
+
+.men-discount {
+  position: absolute;
+
+  top: 16px;
+  left: 16px;
+
+  background: #142b46;
+  color: white;
+
+  padding: 7px 10px;
+
+  font-size: 10px;
+
+  letter-spacing: 0.5px;
+
+  z-index: 2;
+}
+
+
+/* =====================================================
+   HEART BUTTON
+===================================================== */
+
+/* .men-heart {
+  position: absolute;
+
+  top: 14px;
+  right: 14px;
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+
+  border: none;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  color: #142b46;
+
+  font-size: 21px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  z-index: 3;
+
+  transition: all 0.3s ease;
+
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+}
+
+.men-heart:hover {
+  background: #142b46;
+  color: white;
+
+  transform: scale(1.08);
+} */
+
+.men-heart {
+  z-index: 2;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a67c52;
+  background: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 17px;
+  transition: 0.3s ease;
+}
+
+.men-heart:hover {
+  background: #142b46;
+  color: #ffffff;
+}
+
+
+/* =====================================================
+   PRODUCT DETAILS
+===================================================== */
+
+.men-product-details {
+  text-align: center;
+
+  padding: 20px 12px 24px;
+}
+
+
+/* CATEGORY */
+
+.men-category {
+  color: #a67c52;
+
+  font-size: 10px;
+
+  letter-spacing: 1.5px;
+
+  margin-bottom: 8px;
+
+  text-transform: uppercase;
+}
+
+
+/* NAME */
+
+.men-product-details h3 {
+  color: #142b46;
+
+  font-size: 18px;
+
+  font-weight: 500;
+
+  letter-spacing: 0.3px;
+
+  margin-bottom: 8px;
+}
+
+
+/* FRAGRANCE */
+
+.men-fragrance {
+  color: #777;
+
+  font-size: 12px;
+
+  margin-bottom: 6px;
+}
+
+
+/* SIZE */
+
+.men-size {
+  color: #999;
+
+  font-size: 11px;
+
+  letter-spacing: 0.5px;
+
+  margin-bottom: 12px;
+}
+
+
+/* =====================================================
+   PRICE
+===================================================== */
+
+.men-price {
+  margin-bottom: 17px;
+}
+
+.men-price strong {
+  color: #142b46;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  margin-right: 8px;
+}
+
+.men-price del {
+  color: #aaa;
+
+  font-size: 12px;
+}
+
+
+/* =====================================================
+   VIEW PRODUCT BUTTON
+===================================================== */
+
+.men-view-btn {
+  display: inline-block;
+
+  background: #142b46;
+
+  color: white;
+
+  text-decoration: none;
+
+  padding: 11px 23px;
+
+  font-size: 10px;
+
+  letter-spacing: 1.5px;
+
+  border: 1px solid #142b46;
+
+  transition: all 0.3s ease;
+}
+
+.men-view-btn:hover {
+  background: #a67c52;
+
+  border-color: #a67c52;
+
+  color: white;
+
+  text-decoration: none;
+}
+
+
+/* =====================================================
+   HOVER EFFECT
+===================================================== */
+
+.men-product-card:hover .men-view-btn {
+  background: #a67c52;
+  border-color: #a67c52;
+}
+
+
+/* =====================================================
+   BOOTSTRAP ROW SPACING
+===================================================== */
+
+.men-products .row {
+  row-gap: 28px;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 992px) {
+
+  .men-product-image {
+    height: 300px;
+  }
+
+  .men-banner {
+    height: 380px;
+  }
+
+  .men-banner-content h1 {
+    font-size: 44px;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .men-banner {
+    height: 340px;
+  }
+
+  .men-banner-content h1 {
+    font-size: 34px;
+    letter-spacing: 2px;
+  }
+
+  .men-banner-content p {
+    font-size: 10px;
+    letter-spacing: 3px;
+  }
+
+  .men-products {
+    padding: 50px 15px 60px;
+  }
+
+  .men-heading {
+    margin-bottom: 32px;
+  }
+
+  .men-heading h2 {
+    font-size: 29px;
+  }
+
+  .products-toolbar {
+    min-height: 60px;
+    margin-bottom: 30px;
+  }
+
+  .men-product-image {
+    height: 280px;
+  }
+
+  .men-product-details {
+    padding: 17px 8px 22px;
+  }
+
+  .men-product-details h3 {
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .men-banner {
+    height: 300px;
+  }
+
+  .men-banner-content h1 {
+    font-size: 29px;
+  }
+
+  .men-products {
+    padding: 40px 12px 50px;
+  }
+
+  .men-heading h2 {
+    font-size: 26px;
+  }
+
+  .men-heading span {
+    font-size: 12px;
+  }
+
+  .products-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 12px 0;
+  }
+
+  .sort-box {
+    justify-content: space-between;
+  }
+
+  .men-product-image {
+    height: 250px;
+  }
+
+  .men-heart {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+  }
+
+  .men-discount {
+    top: 12px;
+    left: 12px;
+  }
+}

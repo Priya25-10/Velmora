@@ -1,0 +1,479 @@
+
+/* ================= SALE PAGE ================= */
+
+.sale-page {
+  background-color: #ffffff;
+  color: #142b46;
+  min-height: 100vh;
+}
+
+/* ================= BANNER ================= */
+
+.sale-banner {
+  height: 420px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+}
+
+.sale-banner-content {
+  max-width: 750px;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.sale-banner-content p {
+  font-size: 12px;
+  letter-spacing: 5px;
+  margin-bottom: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.sale-banner-content h1 {
+  font-size: 50px;
+  letter-spacing: 3px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.sale-banner-content span {
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 1.7;
+}
+
+/* ================= PRODUCTS SECTION ================= */
+
+.sale-products {
+  padding: 65px 0 80px;
+  background-color: #ffffff;
+}
+
+/* ================= HEADING ================= */
+
+.sale-heading {
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+.sale-heading p {
+  color: #a67c52;
+  font-size: 11px;
+  letter-spacing: 3px;
+  margin-bottom: 9px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.sale-heading h2 {
+  color: #142b46;
+  font-size: 36px;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  font-weight: 400;
+}
+
+.sale-heading span {
+  color: #777777;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* ================= TOOLBAR ================= */
+
+.sale-toolbar {
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  padding: 15px 4px;
+  margin-bottom: 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sale-toolbar span {
+  font-size: 11px;
+  color: #777777;
+  letter-spacing: 1.2px;
+}
+
+.sale-toolbar select {
+  border: 1px solid #eeeeee;
+  background-color: #fafafa;
+  color: #263b54;
+  padding: 9px 30px 9px 12px;
+  font-size: 11px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.sale-toolbar select:hover,
+.sale-toolbar select:focus {
+  border-color: #cbb9a5;
+}
+
+/* ================= PRODUCT CARD ================= */
+
+.sale-product-card {
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+  height: 100%;
+  overflow: hidden;
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.sale-product-card:hover {
+  transform: translateY(-6px);
+  border-color: #e2e2e2;
+  box-shadow: 0 14px 35px rgba(20, 43, 70, 0.10);
+}
+
+/* ================= PRODUCT IMAGE ================= */
+
+.sale-product-image {
+  height: 330px;
+  background-color: #f7f6f3;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sale-product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 0;
+  transition: transform 0.45s ease;
+}
+
+.sale-product-card:hover .sale-product-image img {
+  transform: scale(1.05);
+}
+
+/* ================= SALE BADGE ================= */
+
+.sale-badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 2;
+
+  background-color: #142b46;
+  color: #ffffff;
+
+  padding: 7px 10px;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+}
+
+/* ================= WISHLIST HEART ================= */
+
+.sale-heart {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 5;
+
+  width: 38px;
+  height: 38px;
+  padding: 0;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #ffffff;
+  color: #a67c52;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 17px;
+  cursor: pointer;
+  pointer-events: auto;
+
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+  transition: all 0.3s ease;
+}
+
+.sale-heart svg {
+  width: 16px;
+  height: 16px;
+  display: block;
+  fill: currentColor;
+}
+
+.sale-heart:hover {
+  background-color: #142b46;
+  color: #ffffff;
+  transform: scale(1.08);
+}
+
+.sale-heart:focus-visible {
+  outline: 2px solid #a67c52;
+  outline-offset: 3px;
+}
+
+/* ================= PRODUCT DETAILS ================= */
+
+.sale-product-details {
+  padding: 20px 14px 24px;
+  text-align: center;
+}
+
+.sale-type {
+  color: #a67c52;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.sale-product-details h3 {
+  color: #142b46;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  margin-bottom: 8px;
+}
+
+.sale-category {
+  color: #666666;
+  font-size: 12px;
+  margin-bottom: 7px;
+}
+
+.sale-fragrance {
+  color: #777777;
+  font-size: 12px;
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+.sale-size {
+  color: #999999;
+  font-size: 11px;
+  letter-spacing: 0.4px;
+  margin-bottom: 12px;
+}
+
+/* ================= PRICE ================= */
+
+.sale-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 17px;
+}
+
+.sale-price strong {
+  color: #142b46;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.sale-price del {
+  color: #aaaaaa;
+  font-size: 12px;
+}
+
+/* ================= VIEW DETAILS BUTTON ================= */
+
+.sale-view-btn {
+  display: inline-block;
+  width: 100%;
+
+  text-align: center;
+  text-decoration: none;
+
+  border: 1px solid #142b46;
+  background-color: #142b46;
+  color: #ffffff;
+
+  padding: 11px 10px;
+
+  font-size: 10px;
+  letter-spacing: 1.5px;
+
+  transition: all 0.3s ease;
+}
+
+.sale-view-btn:hover {
+  background-color: #a67c52;
+  border-color: #a67c52;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* ================= EMPTY PRODUCTS ================= */
+
+.no-products {
+  text-align: center;
+  padding: 55px 0;
+  color: #777777;
+  font-size: 14px;
+}
+
+/* ================= PRODUCT GRID SPACING ================= */
+
+.sale-products .row {
+  row-gap: 8px;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 991px) {
+  .sale-banner {
+    height: 380px;
+  }
+
+  .sale-banner-content h1 {
+    font-size: 42px;
+  }
+
+  .sale-product-image {
+    height: 300px;
+  }
+
+  .sale-heading h2 {
+    font-size: 32px;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 767px) {
+  .sale-banner {
+    height: 340px;
+  }
+
+  .sale-banner-content h1 {
+    font-size: 34px;
+    letter-spacing: 1.5px;
+  }
+
+  .sale-banner-content p {
+    font-size: 10px;
+    letter-spacing: 3px;
+  }
+
+  .sale-banner-content span {
+    font-size: 13px;
+  }
+
+  .sale-products {
+    padding: 50px 0 60px;
+  }
+
+  .sale-heading {
+    margin-bottom: 32px;
+    padding: 0 12px;
+  }
+
+  .sale-heading h2 {
+    font-size: 28px;
+  }
+
+  .sale-heading span {
+    font-size: 13px;
+  }
+
+  .sale-toolbar {
+    margin-bottom: 25px;
+    padding: 13px 4px;
+  }
+
+  .sale-product-image {
+    height: 280px;
+  }
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px) {
+  .sale-banner {
+    height: 300px;
+  }
+
+  .sale-banner-content h1 {
+    font-size: 27px;
+    letter-spacing: 1px;
+  }
+
+  .sale-banner-content p {
+    font-size: 9px;
+    letter-spacing: 2.5px;
+  }
+
+  .sale-banner-content span {
+    font-size: 12px;
+  }
+
+  .sale-products {
+    padding: 40px 0 50px;
+  }
+
+  .sale-heading h2 {
+    font-size: 25px;
+  }
+
+  .sale-heading span {
+    font-size: 12px;
+  }
+
+  .sale-toolbar span {
+    font-size: 10px;
+  }
+
+  .sale-toolbar select {
+    padding: 8px 8px;
+    font-size: 10px;
+  }
+
+  .sale-product-image {
+    height: 250px;
+  }
+
+  .sale-product-details {
+    padding: 18px 10px 20px;
+  }
+
+  .sale-product-details h3 {
+    font-size: 16px;
+  }
+
+  .sale-heart {
+    width: 35px;
+    height: 35px;
+    top: 12px;
+    right: 12px;
+  }
+
+  .sale-heart svg {
+    width: 15px;
+    height: 15px;
+  }
+}

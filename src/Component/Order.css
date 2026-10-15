@@ -1,0 +1,442 @@
+/* ================= CHECKOUT PAGE ================= */
+
+.velmora-checkout {
+  width: 100%;
+  max-width: 100%;
+  min-height: 100vh;
+  padding: 45px 0 70px;
+  background: #f8f6f1;
+  color: #172b42;
+  box-sizing: border-box;
+}
+
+/* ================= FULL WIDTH CONTAINER ================= */
+
+.velmora-checkout .checkout-container {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding-left: 35px !important;
+  padding-right: 35px !important;
+  box-sizing: border-box;
+}
+
+/* ================= HEADING ================= */
+
+.checkout-heading {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.checkout-eyebrow,
+.summary-eyebrow {
+  color: #a78354;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+}
+
+.checkout-heading h1 {
+  margin: 10px 0 12px;
+  font-family: Georgia, serif;
+  font-size: 43px;
+  font-weight: 400;
+  color: #172b42;
+}
+
+.checkout-heading > p:not(.checkout-eyebrow) {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.checkout-heading > span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 8px;
+  color: #777;
+  font-size: 11px;
+}
+
+/* ================= FORM WIDTH ================= */
+
+.velmora-checkout form {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+
+.velmora-checkout form > .row {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.velmora-checkout form > .row > [class*="col-"] {
+  width: 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* ================= FORM CARD ================= */
+
+.checkout-card {
+  width: 100%;
+  max-width: 100%;
+  padding: 38px 42px;
+  background: #fff;
+  border: 1px solid #e7dfd3;
+  box-sizing: border-box;
+}
+
+/* ================= SECTION HEADINGS ================= */
+
+.checkout-section-title {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 26px;
+}
+
+.checkout-section-title > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 38px;
+  height: 38px;
+  border: 1px solid #a78354;
+  color: #a78354;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.checkout-section-title h2 {
+  margin: 2px 0 7px;
+  font-family: Georgia, serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #172b42;
+}
+
+.checkout-section-title p {
+  margin: 0;
+  color: #888;
+  font-size: 12px;
+}
+
+/* ================= INNER FORM ROWS ================= */
+
+.checkout-card .row {
+  width: 100%;
+}
+
+.checkout-card .row > [class*="col-"] {
+  min-width: 0;
+}
+
+/* ================= LABELS ================= */
+
+.checkout-card label:not(.payment-option) {
+  display: block;
+  margin-bottom: 9px;
+  color: #344256;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* ================= INPUTS AND TEXTAREA ================= */
+
+.checkout-card input:not([type="radio"]),
+.checkout-card textarea {
+  display: block;
+  width: 100%;
+  min-height: 47px;
+  padding: 13px 15px;
+  background: #fff;
+  border: 1px solid #ded8ce;
+  border-radius: 0;
+  outline: none;
+  color: #172b42;
+  font-family: inherit;
+  font-size: 13px;
+  box-sizing: border-box;
+  transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+.checkout-card textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.checkout-card input:focus,
+.checkout-card textarea:focus {
+  border-color: #a78354;
+  box-shadow: 0 0 0 3px rgba(167, 131, 84, 0.1);
+}
+
+.checkout-card input::placeholder,
+.checkout-card textarea::placeholder {
+  color: #aaa;
+  font-size: 12px;
+}
+
+/* ================= DIVIDER ================= */
+
+.checkout-divider {
+  width: 100%;
+  height: 1px;
+  background: #eee8df;
+  margin: 32px 0;
+}
+
+/* ================= PAYMENT OPTIONS ================= */
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  padding: 19px 20px;
+  margin-bottom: 13px;
+  border: 1px solid #e5dfd5;
+  background: #fff;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: border-color 0.25s, background 0.25s;
+}
+
+.payment-option:hover {
+  border-color: #a78354;
+}
+
+.payment-option.selected {
+  background: #faf8f3;
+  border-color: #a78354;
+}
+
+.payment-option input[type="radio"] {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  accent-color: #a78354;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.payment-icon {
+  color: #a78354;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.payment-option > div {
+  flex: 1;
+  min-width: 0;
+}
+
+.payment-option strong {
+  display: block;
+  color: #172b42;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.payment-option p {
+  margin: 5px 0 0;
+  color: #888;
+  font-size: 11px;
+}
+
+.payment-check {
+  color: #a78354;
+  font-size: 17px;
+  opacity: 0;
+  flex-shrink: 0;
+}
+
+.payment-option.selected .payment-check {
+  opacity: 1;
+}
+
+/* ================= ERROR MESSAGE ================= */
+
+.checkout-error {
+  padding: 13px 15px;
+  margin: 20px 0 0;
+  background: #fff1ef;
+  border-left: 3px solid #b44b40;
+  color: #a33c32;
+  font-size: 12px;
+}
+
+/* ================= PLACE ORDER BUTTON ================= */
+
+.place-order-btn {
+  display: block;
+  width: 100%;
+  margin-top: 27px;
+  padding: 18px 15px;
+  border: 1px solid #172b42;
+  background: #172b42;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  cursor: pointer;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.place-order-btn:hover {
+  border-color: #a78354;
+  background: #a78354;
+}
+
+/* ================= TERMS ================= */
+
+.checkout-terms {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 18px 0 0;
+  color: #999;
+  font-size: 11px;
+  text-align: center;
+}
+
+/* ================= EMPTY CHECKOUT ================= */
+
+.checkout-empty {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background: #f8f6f1;
+  color: #172b42;
+  text-align: center;
+}
+
+.checkout-empty > svg {
+  color: #a78354;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.checkout-empty h2 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+}
+
+.checkout-empty p {
+  color: #777;
+  font-size: 13px;
+}
+
+.checkout-back-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 14px 22px;
+  background: #172b42;
+  color: #fff;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.checkout-back-btn:hover {
+  background: #a78354;
+  color: #fff;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 991px) {
+  .velmora-checkout {
+    padding: 35px 0 55px;
+  }
+
+  .velmora-checkout .checkout-container {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
+  .checkout-card {
+    padding: 30px;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 576px) {
+  .velmora-checkout {
+    padding: 28px 0 40px;
+  }
+
+  .velmora-checkout .checkout-container {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  .checkout-heading {
+    margin-bottom: 28px;
+  }
+
+  .checkout-heading h1 {
+    font-size: 33px;
+  }
+
+  .checkout-heading > p:not(.checkout-eyebrow) {
+    padding: 0 8px;
+    font-size: 13px;
+  }
+
+  .checkout-card {
+    padding: 23px 17px;
+  }
+
+  .checkout-section-title {
+    gap: 12px;
+    margin-bottom: 22px;
+  }
+
+  .checkout-section-title > span {
+    min-width: 33px;
+    height: 33px;
+  }
+
+  .checkout-section-title h2 {
+    font-size: 21px;
+  }
+
+  .checkout-divider {
+    margin: 25px 0;
+  }
+
+  .payment-option {
+    gap: 11px;
+    padding: 15px 12px;
+  }
+
+  .payment-option p {
+    line-height: 1.5;
+  }
+
+  .place-order-btn {
+    padding: 16px 10px;
+    font-size: 11px;
+  }
+
+  .checkout-terms {
+    font-size: 10px;
+  }
+}

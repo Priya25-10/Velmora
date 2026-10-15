@@ -1,0 +1,550 @@
+
+/* =====================================================
+   VELMORA COLLECTIONS PAGE
+===================================================== */
+
+.collections-page {
+  background: #ffffff;
+  color: #142b46;
+  min-height: 100vh;
+}
+
+/* =====================================================
+   BANNER
+===================================================== */
+
+.collections-banner {
+  height: 420px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.collections-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.collections-banner-content {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+.collections-banner-content p {
+  font-size: 12px;
+  letter-spacing: 5px;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+
+.collections-banner-content h1 {
+  font-size: 52px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  margin: 0 0 14px;
+}
+
+.collections-banner-content span {
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+/* =====================================================
+   PRODUCTS SECTION
+===================================================== */
+
+.collections-products {
+  padding: 65px 0 80px;
+}
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.collections-heading {
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+.collections-heading p {
+  color: #a67c52;
+  font-size: 11px;
+  letter-spacing: 3px;
+  margin-bottom: 9px;
+  text-transform: uppercase;
+}
+
+.collections-heading h2 {
+  color: #142b46;
+  font-size: 38px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.collections-heading span {
+  color: #777777;
+  font-size: 14px;
+}
+
+/* =====================================================
+   TOOLBAR
+===================================================== */
+
+.products-toolbar {
+  min-height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 30px;
+  padding: 0 4px;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  background: #ffffff;
+}
+
+/* FILTER BUTTON */
+
+.filter-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #fafafa;
+  border: 1px solid #eeeeee;
+  border-radius: 3px;
+  color: #263b54;
+  padding: 8px 14px;
+  font-size: 11px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.filter-btn:hover {
+  background: #f4f1ed;
+  border-color: #ded7ce;
+  color: #8c6b4d;
+}
+
+/* SORT */
+
+.sort-box {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.sort-box label {
+  color: #999999;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.sort-box select {
+  min-width: 125px;
+  padding: 8px 28px 8px 10px;
+  border: 1px solid #eeeeee;
+  border-radius: 3px;
+  background-color: #fafafa;
+  color: #263b54;
+  font-size: 11px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.sort-box select:hover {
+  border-color: #ded7ce;
+  background-color: #f8f6f3;
+}
+
+.sort-box select:focus {
+  border-color: #cbb9a5;
+}
+
+/* =====================================================
+   FILTER AREA
+===================================================== */
+
+.filter-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 18px 20px;
+  background: #f7f5f1;
+  margin-bottom: 35px;
+  border: 1px solid #eeeeee;
+}
+
+.filter-area button {
+  background: #ffffff;
+  border: 1px solid #d5d5d5;
+  color: #333333;
+  padding: 9px 17px;
+  font-size: 11px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.filter-area button:hover,
+.filter-area .active-filter {
+  background: #142b46;
+  color: #ffffff;
+  border-color: #142b46;
+}
+
+/* =====================================================
+   PRODUCT CARD
+===================================================== */
+
+.collections-product-card {
+  height: 100%;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+  overflow: hidden;
+}
+
+.collections-product-card:hover {
+  transform: translateY(-6px);
+  border-color: #e2e2e2;
+  box-shadow: 0 14px 35px rgba(20, 43, 70, 0.10);
+}
+
+/* =====================================================
+   PRODUCT IMAGE
+===================================================== */
+
+.collections-product-image {
+  height: 330px;
+  background: #f7f6f3;
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.collections-product-image img {
+  width: 88%;
+  height: 90%;
+  object-fit: contain;
+  position: relative;
+  z-index: 0;
+  transition: transform 0.45s ease;
+}
+
+.collections-product-card:hover
+.collections-product-image img {
+  transform: scale(1.06);
+}
+
+/* =====================================================
+   DISCOUNT
+===================================================== */
+
+.collections-discount {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: #142b46;
+  color: #ffffff;
+  padding: 7px 10px;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  z-index: 2;
+}
+
+/* =====================================================
+   HEART - SAME STYLE AS MEN PAGE
+===================================================== */
+
+.collections-heart {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 5;
+
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 50%;
+
+  background: #ffffff;
+  color: #a67c52;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 17px;
+  cursor: pointer;
+  pointer-events: auto;
+
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+  transition: all 0.3s ease;
+}
+
+.collections-heart svg {
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+
+.collections-heart:hover {
+  background: #142b46;
+  color: #ffffff;
+  transform: scale(1.08);
+}
+
+.collections-heart:focus-visible {
+  outline: 2px solid #a67c52;
+  outline-offset: 3px;
+}
+
+/* =====================================================
+   PRODUCT DETAILS
+===================================================== */
+
+.collections-product-details {
+  text-align: center;
+  padding: 20px 12px 24px;
+}
+
+.collections-category {
+  color: #a67c52;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.collections-product-details h3 {
+  color: #142b46;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  margin-bottom: 8px;
+}
+
+.collections-fragrance {
+  color: #777777;
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.collections-size {
+  color: #999999;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+/* =====================================================
+   PRICE
+===================================================== */
+
+.collections-price {
+  margin-bottom: 17px;
+}
+
+.collections-price strong {
+  color: #142b46;
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+.collections-price del {
+  color: #aaaaaa;
+  font-size: 12px;
+}
+
+/* =====================================================
+   VIEW PRODUCT BUTTON
+===================================================== */
+
+.collections-view-btn {
+  display: inline-block;
+  background: #142b46;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 11px 23px;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  border: 1px solid #142b46;
+  transition: all 0.3s ease;
+}
+
+.collections-view-btn:hover {
+  background: #a67c52;
+  border-color: #a67c52;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* =====================================================
+   ROW GAP
+===================================================== */
+
+.collections-products .row {
+  row-gap: 28px;
+}
+
+/* =====================================================
+   NO PRODUCTS
+===================================================== */
+
+.no-products {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.no-products h4 {
+  color: #142b46;
+  margin-bottom: 10px;
+}
+
+.no-products p {
+  color: #777777;
+  font-size: 14px;
+}
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 992px) {
+  .collections-product-image {
+    height: 300px;
+  }
+
+  .collections-banner {
+    height: 380px;
+  }
+
+  .collections-banner-content h1 {
+    font-size: 44px;
+  }
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+  .collections-banner {
+    height: 340px;
+  }
+
+  .collections-banner-content h1 {
+    font-size: 34px;
+    letter-spacing: 2px;
+  }
+
+  .collections-banner-content p {
+    font-size: 10px;
+    letter-spacing: 3px;
+  }
+
+  .collections-products {
+    padding: 50px 15px 60px;
+  }
+
+  .collections-heading {
+    margin-bottom: 32px;
+  }
+
+  .collections-heading h2 {
+    font-size: 29px;
+  }
+
+  .products-toolbar {
+    min-height: 60px;
+    margin-bottom: 30px;
+  }
+
+  .collections-product-image {
+    height: 280px;
+  }
+}
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+  .collections-banner {
+    height: 300px;
+  }
+
+  .collections-banner-content h1 {
+    font-size: 29px;
+  }
+
+  .collections-products {
+    padding: 40px 12px 50px;
+  }
+
+  .collections-heading h2 {
+    font-size: 26px;
+  }
+
+  .collections-heading span {
+    font-size: 12px;
+  }
+
+  .products-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 0;
+  }
+
+  .sort-box {
+    justify-content: space-between;
+  }
+
+  .sort-box label {
+    font-size: 9px;
+  }
+
+  .sort-box select {
+    min-width: 105px;
+    font-size: 10px;
+    padding: 7px 8px;
+  }
+
+  .collections-product-image {
+    height: 250px;
+  }
+
+  .collections-heart {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+    top: 12px;
+    right: 12px;
+  }
+
+  .collections-discount {
+    top: 12px;
+    left: 12px;
+  }
+}

@@ -1,0 +1,641 @@
+/* =====================================================
+   VELMORA WOMEN PAGE
+   Same design as MEN page
+===================================================== */
+
+.women-page {
+  background: #ffffff;
+  color: #142b46;
+  min-height: 100vh;
+}
+
+
+/* =====================================================
+   BANNER
+===================================================== */
+
+.women-banner {
+  height: 420px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  position: relative;
+}
+
+.women-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.women-banner-content {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+.women-banner-content p {
+  font-size: 12px;
+  letter-spacing: 5px;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+
+.women-banner-content h1 {
+  font-size: 52px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  margin: 0 0 14px;
+}
+
+.women-banner-content span {
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+
+/* =====================================================
+   PRODUCTS SECTION
+===================================================== */
+
+.women-products {
+  padding: 65px 0 80px;
+}
+
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.women-heading {
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+.women-heading p {
+  color: #a67c52;
+
+  font-size: 11px;
+
+  letter-spacing: 3px;
+
+  margin-bottom: 9px;
+
+  text-transform: uppercase;
+}
+
+.women-heading h2 {
+  color: #142b46;
+
+  font-size: 38px;
+
+  font-weight: 400;
+
+  letter-spacing: 1px;
+
+  margin-bottom: 12px;
+}
+
+.women-heading span {
+  color: #777;
+
+  font-size: 14px;
+}
+
+
+/* =====================================================
+   TOOLBAR
+===================================================== */
+
+.products-toolbar {
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 0 0 30px;
+
+  padding: 0 4px;
+
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+
+  background: #ffffff;
+}
+
+
+/* FILTER */
+
+.filter-btn {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  background: #fafafa;
+
+  border: 1px solid #eeeeee;
+
+  border-radius: 3px;
+
+  color: #263b54;
+
+  padding: 8px 14px;
+
+  font-size: 11px;
+
+  letter-spacing: 1px;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.filter-btn:hover {
+  background: #f4f1ed;
+
+  border-color: #ded7ce;
+
+  color: #8c6b4d;
+}
+
+
+/* SORT */
+
+.sort-box {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+}
+
+.sort-box label {
+  color: #999999;
+
+  font-size: 10px;
+
+  letter-spacing: 1.5px;
+
+  text-transform: uppercase;
+}
+
+.sort-box select {
+  min-width: 125px;
+
+  padding: 8px 28px 8px 10px;
+
+  border: 1px solid #eeeeee;
+
+  border-radius: 3px;
+
+  background-color: #fafafa;
+
+  color: #263b54;
+
+  font-size: 11px;
+
+  outline: none;
+
+  cursor: pointer;
+}
+
+.sort-box select:hover {
+  border-color: #ded7ce;
+
+  background-color: #f8f6f3;
+}
+
+
+/* =====================================================
+   FILTER AREA
+===================================================== */
+
+.filter-area {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  flex-wrap: wrap;
+
+  padding: 18px 20px;
+
+  background: #f7f5f1;
+
+  margin-bottom: 35px;
+
+  border: 1px solid #eee;
+}
+
+.filter-area button {
+  background: white;
+
+  border: 1px solid #d5d5d5;
+
+  color: #333;
+
+  padding: 9px 17px;
+
+  font-size: 11px;
+
+  letter-spacing: 1px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.filter-area button:hover,
+.filter-area .active-filter {
+  background: #142b46;
+
+  color: white;
+
+  border-color: #142b46;
+}
+
+
+/* =====================================================
+   PRODUCT CARD
+===================================================== */
+
+.women-product-card {
+  height: 100%;
+
+  background: #ffffff;
+
+  border: 1px solid #eeeeee;
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+
+  overflow: hidden;
+}
+
+.women-product-card:hover {
+  transform: translateY(-6px);
+
+  border-color: #e2e2e2;
+
+  box-shadow: 0 14px 35px rgba(20, 43, 70, 0.10);
+}
+
+
+/* =====================================================
+   PRODUCT IMAGE
+===================================================== */
+
+.women-product-image {
+  height: 330px;
+
+  background: #f7f6f3;
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.women-product-image img {
+  width: 88%;
+
+  height: 90%;
+
+  object-fit: contain;
+
+  transition: transform 0.45s ease;
+}
+
+.women-product-card:hover .women-product-image img {
+  transform: scale(1.06);
+}
+
+
+/* =====================================================
+   DISCOUNT
+===================================================== */
+
+.women-discount {
+  position: absolute;
+
+  top: 16px;
+
+  left: 16px;
+
+  background: #142b46;
+
+  color: white;
+
+  padding: 7px 10px;
+
+  font-size: 10px;
+
+  letter-spacing: 0.5px;
+
+  z-index: 2;
+}
+
+
+/* =====================================================
+   HEART
+===================================================== */
+
+.women-heart {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 10;
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #a67c52;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  cursor: pointer;
+  pointer-events: auto;
+  transition: 0.3s ease;
+}
+
+.women-heart:hover {
+  background: #142b46;
+
+  color: #ffffff;
+
+  /* transform: scale(1.08); */
+}
+
+
+/* =====================================================
+   PRODUCT DETAILS
+===================================================== */
+
+.women-product-details {
+  text-align: center;
+
+  padding: 20px 12px 24px;
+}
+
+.women-category {
+  color: #a67c52;
+
+  font-size: 10px;
+
+  letter-spacing: 1.5px;
+
+  margin-bottom: 8px;
+
+  text-transform: uppercase;
+}
+
+.women-product-details h3 {
+  color: #142b46;
+
+  font-size: 18px;
+
+  font-weight: 500;
+
+  letter-spacing: 0.3px;
+
+  margin-bottom: 8px;
+}
+
+.women-fragrance {
+  color: #777;
+
+  font-size: 12px;
+
+  margin-bottom: 6px;
+}
+
+.women-size {
+  color: #999;
+
+  font-size: 11px;
+
+  letter-spacing: 0.5px;
+
+  margin-bottom: 12px;
+}
+
+
+/* =====================================================
+   PRICE
+===================================================== */
+
+.women-price {
+  margin-bottom: 17px;
+}
+
+.women-price strong {
+  color: #142b46;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  margin-right: 8px;
+}
+
+.women-price del {
+  color: #aaa;
+
+  font-size: 12px;
+}
+
+
+/* =====================================================
+   VIEW BUTTON
+===================================================== */
+
+.women-view-btn {
+  display: inline-block;
+
+  background: #142b46;
+
+  color: white;
+
+  text-decoration: none;
+
+  padding: 11px 23px;
+
+  font-size: 10px;
+
+  letter-spacing: 1.5px;
+
+  border: 1px solid #142b46;
+
+  transition: all 0.3s ease;
+}
+
+.women-view-btn:hover {
+  background: #a67c52;
+
+  border-color: #a67c52;
+
+  color: white;
+
+  text-decoration: none;
+}
+
+
+/* =====================================================
+   ROW GAP
+===================================================== */
+
+.women-products .row {
+  row-gap: 28px;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 992px) {
+
+  .women-product-image {
+    height: 300px;
+  }
+
+  .women-banner {
+    height: 380px;
+  }
+
+  .women-banner-content h1 {
+    font-size: 44px;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .women-banner {
+    height: 340px;
+  }
+
+  .women-banner-content h1 {
+    font-size: 34px;
+
+    letter-spacing: 2px;
+  }
+
+  .women-banner-content p {
+    font-size: 10px;
+
+    letter-spacing: 3px;
+  }
+
+  .women-products {
+    padding: 50px 15px 60px;
+  }
+
+  .women-heading {
+    margin-bottom: 32px;
+  }
+
+  .women-heading h2 {
+    font-size: 29px;
+  }
+
+  .products-toolbar {
+    min-height: 60px;
+
+    margin-bottom: 30px;
+  }
+
+  .women-product-image {
+    height: 280px;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .women-banner {
+    height: 300px;
+  }
+
+  .women-banner-content h1 {
+    font-size: 29px;
+  }
+
+  .women-products {
+    padding: 40px 12px 50px;
+  }
+
+  .women-heading h2 {
+    font-size: 26px;
+  }
+
+  .women-heading span {
+    font-size: 12px;
+  }
+
+  .products-toolbar {
+    flex-direction: column;
+
+    align-items: stretch;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 12px 0;
+  }
+
+  .sort-box {
+    justify-content: space-between;
+  }
+
+  .sort-box label {
+    font-size: 9px;
+  }
+
+  .sort-box select {
+    min-width: 105px;
+
+    font-size: 10px;
+
+    padding: 7px 8px;
+  }
+
+  .women-product-image {
+    height: 250px;
+  }
+
+  .women-heart {
+    width: 35px;
+
+    height: 35px;
+
+    font-size: 18px;
+  }
+
+  .women-discount {
+    top: 12px;
+
+    left: 12px;
+  }
+}

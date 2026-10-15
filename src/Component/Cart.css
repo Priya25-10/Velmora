@@ -1,0 +1,310 @@
+
+/* ================= CART PAGE ================= */
+
+.velmora-cart-page {
+  min-height: 75vh;
+  padding: 55px 0 80px;
+  background: #f8f6f1;
+  color: #172b42;
+}
+
+/* ================= HEADING ================= */
+
+.cart-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.cart-heading > p,
+.summary-label {
+  color: #a78354;
+  font-size: 11px;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+.cart-heading h1 {
+  font-family: Georgia, serif;
+  font-size: 42px;
+  margin: 12px 0;
+  font-weight: 400;
+}
+
+.cart-heading > span {
+  color: #777;
+  font-size: 14px;
+}
+
+/* ================= EMPTY CART ================= */
+
+.empty-cart {
+  background: #fff;
+  padding: 75px 20px;
+  text-align: center;
+  border: 1px solid #e8e0d4;
+}
+
+.empty-cart-icon {
+  font-size: 42px;
+  color: #a78354;
+  margin-bottom: 22px;
+}
+
+.empty-cart h2 {
+  font-family: Georgia, serif;
+  font-size: 29px;
+  font-weight: 400;
+}
+
+.empty-cart p {
+  color: #777;
+  margin: 14px 0 28px;
+}
+
+.continue-shopping-btn {
+  display: inline-block;
+  background: #172b42;
+  color: #fff;
+  padding: 14px 25px;
+  text-decoration: none;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  transition: 0.3s;
+}
+
+.continue-shopping-btn:hover {
+  background: #a78354;
+  color: #fff;
+}
+
+/* ================= PRODUCT LIST ================= */
+
+.cart-items-list {
+  background: #fff;
+  border: 1px solid #e8e0d4;
+  padding: 10px 28px;
+}
+
+.cart-product {
+  display: flex;
+  gap: 25px;
+  padding: 25px 0;
+  border-bottom: 1px solid #eee8df;
+}
+
+.cart-product:last-child {
+  border-bottom: none;
+}
+
+.cart-product-image {
+  width: 155px;
+  min-width: 155px;
+  height: 175px;
+  background: #f8f6f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+}
+
+.cart-product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.cart-product-info {
+  flex: 1;
+  padding: 8px 0;
+}
+
+.cart-product-category {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: #a78354;
+  margin-bottom: 9px;
+}
+
+.cart-product-info h3 {
+  font-family: Georgia, serif;
+  font-size: 23px;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.cart-product-price {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* ================= QUANTITY ================= */
+
+.cart-product-actions {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.cart-quantity {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ded7cc;
+  height: 36px;
+}
+
+.cart-quantity button {
+  width: 34px;
+  height: 34px;
+  background: transparent;
+  border: none;
+  color: #172b42;
+  font-size: 19px;
+}
+
+.cart-quantity span {
+  min-width: 30px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.cart-remove-btn {
+  border: none;
+  background: transparent;
+  color: #777;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.cart-remove-btn:hover {
+  color: #a78354;
+}
+
+/* ================= ORDER SUMMARY ================= */
+
+.cart-summary {
+  background: #fff;
+  border: 1px solid #e8e0d4;
+  padding: 28px 25px;
+  position: sticky;
+  top: 25px;
+}
+
+.cart-summary h2 {
+  font-family: Georgia, serif;
+  font-size: 26px;
+  font-weight: 400;
+  margin: 10px 0 28px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+.summary-row span:first-child {
+  color: #777;
+}
+
+.summary-divider {
+  height: 1px;
+  background: #e8e0d4;
+  margin: 23px 0;
+}
+
+.summary-total {
+  font-size: 16px;
+  font-weight: 600;
+  color: #172b42;
+}
+
+.summary-total span:first-child {
+  color: #172b42;
+}
+
+.cart-checkout-btn {
+  width: 100%;
+  padding: 15px 10px;
+  background: #172b42;
+  color: #fff;
+  border: 1px solid #172b42;
+  font-size: 11px;
+  letter-spacing: 1.2px;
+  margin-top: 12px;
+  transition: 0.3s;
+}
+
+.cart-checkout-btn:hover {
+  background: #a78354;
+  border-color: #a78354;
+}
+
+.cart-continue-link {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #172b42;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.cart-trust-note {
+  text-align: center;
+  color: #999;
+  font-size: 11px;
+  margin: 25px 0 0;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 991px) {
+  .cart-summary {
+    position: static;
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .velmora-cart-page {
+    padding: 35px 0 55px;
+  }
+
+  .cart-heading h1 {
+    font-size: 34px;
+  }
+
+  .cart-items-list {
+    padding: 5px 15px;
+  }
+
+  .cart-product {
+    gap: 14px;
+  }
+
+  .cart-product-image {
+    width: 105px;
+    min-width: 105px;
+    height: 135px;
+  }
+
+  .cart-product-info h3 {
+    font-size: 19px;
+  }
+
+  .cart-product-price {
+    font-size: 15px;
+    margin-bottom: 14px;
+  }
+
+  .cart-product-actions {
+    gap: 12px;
+  }
+
+  .cart-remove-btn {
+    font-size: 9px;
+  }
+}

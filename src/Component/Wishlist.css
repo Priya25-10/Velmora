@@ -1,0 +1,303 @@
+.wishlist-page {
+  background: #ffffff;
+  color: #142b46;
+  min-height: 70vh;
+}
+
+.wishlist-banner {
+  min-height: 450px;
+  background:
+    linear-gradient(rgba(10, 25, 43, 0.66), rgba(10, 25, 43, 0.66)),
+    url("https://www.lizzieinlace.com/wp-content/uploads/2018/11/2-festive-fragrances.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  padding: 45px 20px;
+}
+
+.wishlist-banner-content span {
+  font-size: 12px;
+  letter-spacing: 4px;
+  color: #e0c39a;
+}
+
+.wishlist-banner-content h1 {
+  font-family: Georgia, serif;
+  font-size: 48px;
+  margin: 15px 0;
+  letter-spacing: 1px;
+}
+
+.wishlist-banner-content p {
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+.wishlist-container {
+  padding-top: 55px;
+  padding-bottom: 75px;
+}
+
+.wishlist-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 22px;
+  margin-bottom: 35px;
+}
+
+.wishlist-heading h2 {
+  font-family: Georgia, serif;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.wishlist-heading p {
+  color: #777777;
+  font-size: 14px;
+  margin: 0;
+}
+
+.wishlist-heading-icon {
+  color: #a67c52;
+  font-size: 25px;
+}
+
+.wishlist-card {
+  height: 100%;
+  border: 1px solid #eeeeee;
+  background: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wishlist-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 28px rgba(20, 43, 70, 0.09);
+}
+
+.wishlist-image-box {
+  height: 290px;
+  background: #f7f6f3;
+  position: relative;
+  overflow: hidden;
+}
+
+.wishlist-product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.wishlist-card:hover .wishlist-product-image {
+  transform: scale(1.04);
+}
+
+.wishlist-discount {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #142b46;
+  color: #ffffff;
+  padding: 6px 10px;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+}
+
+.wishlist-remove-icon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #eeeeee;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #a67c52;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.wishlist-product-info {
+  padding: 20px 17px;
+}
+
+.wishlist-category {
+  color: #a67c52;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1.2px;
+}
+
+.wishlist-product-info h3 {
+  font-family: Georgia, serif;
+  font-size: 19px;
+  margin: 10px 0;
+}
+
+.wishlist-fragrance {
+  font-size: 13px;
+  color: #777777;
+  min-height: 20px;
+  margin-bottom: 15px;
+}
+
+.wishlist-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.wishlist-price strong {
+  font-size: 17px;
+  color: #142b46;
+}
+
+.wishlist-price del {
+  color: #999999;
+  font-size: 13px;
+}
+
+.wishlist-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.wishlist-view-btn {
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+  background: #142b46;
+  color: #ffffff;
+  padding: 11px 8px;
+  font-size: 13px;
+  border: 1px solid #142b46;
+  transition: 0.3s ease;
+}
+
+.wishlist-view-btn:hover {
+  background: #a67c52;
+  border-color: #a67c52;
+  color: #ffffff;
+}
+
+.wishlist-delete-btn {
+  height: 40px;
+  width: 42px;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  color: #777777;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.wishlist-delete-btn:hover {
+  color: #ffffff;
+  background: #142b46;
+  border-color: #142b46;
+}
+
+.wishlist-empty {
+  max-width: 600px;
+  margin: 30px auto 45px;
+  padding: 45px 25px;
+  text-align: center;
+  border: 1px solid #eeeeee;
+}
+
+.empty-heart {
+  font-size: 42px;
+  color: #a67c52;
+  margin-bottom: 20px;
+}
+
+.wishlist-empty h3,
+.wishlist-suggestions h3 {
+  font-family: Georgia, serif;
+  font-size: 25px;
+  margin-bottom: 12px;
+}
+
+.wishlist-empty p,
+.wishlist-suggestions p {
+  color: #777777;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 22px;
+}
+
+.wishlist-shop-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  background: #142b46;
+  color: #ffffff;
+  padding: 12px 23px;
+  text-decoration: none;
+  font-size: 13px;
+  border: 1px solid #142b46;
+  transition: 0.3s ease;
+}
+
+.wishlist-shop-btn:hover {
+  background: #a67c52;
+  border-color: #a67c52;
+  color: #ffffff;
+}
+
+.wishlist-suggestions {
+  text-align: center;
+  margin-top: 45px;
+}
+
+@media (max-width: 767px) {
+  .wishlist-banner {
+    min-height: 240px;
+  }
+
+  .wishlist-banner-content h1 {
+    font-size: 36px;
+  }
+
+  .wishlist-banner-content span {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+  .wishlist-container {
+    padding-top: 35px;
+    padding-bottom: 45px;
+  }
+
+  .wishlist-heading h2 {
+    font-size: 22px;
+  }
+
+  .wishlist-image-box {
+    height: 260px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wishlist-heading h2 {
+    font-size: 20px;
+  }
+
+  .wishlist-image-box {
+    height: 230px;
+  }
+
+  .wishlist-product-info {
+    padding: 16px 12px;
+  }
+}

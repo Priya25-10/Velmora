@@ -1,0 +1,430 @@
+/* =====================================================
+   VELMORA BLOG DETAILS
+===================================================== */
+
+.blog-details {
+  background-color: #ffffff;
+  color: #142b46;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.blog-details-header {
+  min-height: 330px;
+
+  background-color: #f7f5f1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 70px 20px;
+}
+
+.blog-details-header-content {
+  max-width: 850px;
+}
+
+
+/* =====================================================
+   CATEGORY
+===================================================== */
+
+.blog-details-category {
+  color: #a67c52;
+
+  font-size: 11px;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+
+  margin-bottom: 18px;
+}
+
+
+/* =====================================================
+   TITLE
+===================================================== */
+
+.blog-details-header h1 {
+  color: #142b46;
+
+  font-size: 48px;
+
+  font-weight: 400;
+
+  line-height: 1.25;
+
+  letter-spacing: 1px;
+
+  margin-bottom: 18px;
+}
+
+
+/* =====================================================
+   READ TIME
+===================================================== */
+
+.blog-details-header span {
+  color: #888888;
+
+  font-size: 12px;
+
+  letter-spacing: 1px;
+}
+
+
+/* =====================================================
+   MAIN SECTION
+===================================================== */
+
+.blog-details-section {
+  padding: 70px 20px 90px;
+}
+
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.blog-details-container {
+  max-width: 1000px;
+
+  margin: 0 auto;
+}
+
+
+/* =====================================================
+   MAIN IMAGE
+===================================================== */
+
+.blog-details-image {
+  width: 100%;
+
+  height: 520px;
+
+  background-color: #f7f5f1;
+
+  overflow: hidden;
+
+  margin-bottom: 55px;
+}
+
+.blog-details-image img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+
+/* =====================================================
+   ARTICLE
+===================================================== */
+
+.blog-article {
+  max-width: 780px;
+
+  margin: 0 auto;
+}
+
+
+/* =====================================================
+   INTRO
+===================================================== */
+
+.blog-intro {
+  color: #333333;
+
+  font-size: 18px;
+
+  line-height: 1.9;
+
+  font-weight: 400;
+
+  margin-bottom: 45px;
+}
+
+
+/* =====================================================
+   ARTICLE HEADINGS
+===================================================== */
+
+.blog-article h2 {
+  color: #142b46;
+
+  font-size: 28px;
+
+  font-weight: 500;
+
+  line-height: 1.4;
+
+  margin-top: 38px;
+
+  margin-bottom: 15px;
+}
+
+
+/* =====================================================
+   ARTICLE TEXT
+===================================================== */
+
+.blog-article p {
+  color: #666666;
+
+  font-size: 15px;
+
+  line-height: 1.9;
+
+  margin-bottom: 22px;
+}
+
+
+/* =====================================================
+   BACK TO BLOG
+===================================================== */
+
+.back-to-blog {
+  text-align: center;
+
+  margin-top: 55px;
+
+  padding-top: 30px;
+
+  border-top: 1px solid #eeeeee;
+}
+
+.back-to-blog a {
+  display: inline-block;
+
+  color: #142b46;
+
+  text-decoration: none;
+
+  border: 1px solid #142b46;
+
+  padding: 11px 24px;
+
+  font-size: 10px;
+
+  letter-spacing: 1.5px;
+
+  transition: all 0.3s ease;
+}
+
+.back-to-blog a:hover {
+  background-color: #142b46;
+
+  color: #ffffff;
+
+  text-decoration: none;
+}
+
+
+/* =====================================================
+   BLOG NOT FOUND
+===================================================== */
+
+.blog-not-found {
+  min-height: 500px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 40px;
+}
+
+.blog-not-found h2 {
+  color: #142b46;
+
+  font-size: 32px;
+
+  font-weight: 400;
+
+  margin-bottom: 12px;
+}
+
+.blog-not-found p {
+  color: #777777;
+
+  font-size: 14px;
+
+  margin-bottom: 25px;
+}
+
+.blog-not-found a {
+  color: #ffffff;
+
+  background-color: #142b46;
+
+  text-decoration: none;
+
+  padding: 11px 22px;
+
+  font-size: 10px;
+
+  letter-spacing: 1.5px;
+
+  transition: 0.3s ease;
+}
+
+.blog-not-found a:hover {
+  background-color: #a67c52;
+
+  color: #ffffff;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 992px) {
+
+  .blog-details-header {
+    min-height: 300px;
+
+    padding: 60px 20px;
+  }
+
+  .blog-details-header h1 {
+    font-size: 42px;
+  }
+
+  .blog-details-section {
+    padding: 60px 20px 75px;
+  }
+
+  .blog-details-image {
+    height: 430px;
+
+    margin-bottom: 45px;
+  }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+  .blog-details-header {
+    min-height: 270px;
+
+    padding: 50px 18px;
+  }
+
+  .blog-details-category {
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 14px;
+  }
+
+  .blog-details-header h1 {
+    font-size: 34px;
+
+    line-height: 1.3;
+  }
+
+  .blog-details-section {
+    padding: 45px 15px 60px;
+  }
+
+  .blog-details-image {
+    height: 330px;
+
+    margin-bottom: 38px;
+  }
+
+  .blog-intro {
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-bottom: 35px;
+  }
+
+  .blog-article h2 {
+    font-size: 24px;
+
+    margin-top: 32px;
+  }
+
+  .blog-article p {
+    font-size: 14px;
+
+    line-height: 1.8;
+  }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+  .blog-details-header {
+    min-height: 240px;
+
+    padding: 40px 15px;
+  }
+
+  .blog-details-header h1 {
+    font-size: 27px;
+  }
+
+  .blog-details-header span {
+    font-size: 10px;
+  }
+
+  .blog-details-section {
+    padding: 35px 12px 50px;
+  }
+
+  .blog-details-image {
+    height: 260px;
+
+    margin-bottom: 32px;
+  }
+
+  .blog-intro {
+    font-size: 15px;
+
+    line-height: 1.8;
+  }
+
+  .blog-article h2 {
+    font-size: 21px;
+  }
+
+  .blog-article p {
+    font-size: 13px;
+  }
+
+  .back-to-blog {
+    margin-top: 40px;
+  }
+
+}

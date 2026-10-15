@@ -1,0 +1,59 @@
+.velmora-navbar {
+  background-color: #ffffff;
+  padding: 18px 35px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.velmora-logo {
+  text-decoration: none;
+  color: #1c1c1c;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 5px;
+}
+
+.velmora-links {
+  gap: 30px;
+}
+
+.velmora-links a {
+  text-decoration: none;
+  color: #222222;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.velmora-links a:hover {
+  color: #a67c52;
+}
+
+.velmora-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.velmora-icons a {
+  text-decoration: none;
+  color: #222222;
+  font-size: 19px;
+}
+
+.velmora-icons a:hover {
+  color: #a67c52;
+}
+
+@media (max-width: 991px) {
+
+  .velmora-links {
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .velmora-icons {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+}
